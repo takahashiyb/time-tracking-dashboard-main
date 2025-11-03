@@ -19,7 +19,7 @@ function displayActivityCards() {
 
   const value = selected?.value;
 
-  fetch("../data.json")
+  fetch("./data.json")
     .then((response) => {
       return response.json();
     })
