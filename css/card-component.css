@@ -8,27 +8,27 @@
   overflow: hidden;
 }
 
-.card1 {
+.card0 {
   background-color: var(--color-orange-300);
 }
 
-.card2 {
+.card1 {
   background-color: var(--color-blue-300);
 }
 
-.card3 {
+.card2 {
   background-color: var(--color-pink-400);
 }
 
-.card4 {
+.card3 {
   background-color: var(--color-green-400);
 }
 
-.card5 {
+.card4 {
   background-color: var(--color-purple-700);
 }
 
-.card6 {
+.card5 {
   background-color: var(--color-yellow-300);
 }
 

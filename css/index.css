@@ -11,16 +11,6 @@ html {
   font-size: 16px;
 }
 
-/* Default */
-
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Variables */
 
 :root {
@@ -65,9 +55,55 @@ body {
   --spacing-500: 40px;
 }
 
-/* Font setting template */
-
 html {
   font: var(--text-preset-5);
   color: var(--color-white);
+
+  display: grid;
+  place-content: center;
+
+  background-color: var(--color-navy-950);
+}
+
+main {
+  display: grid;
+  gap: var(--spacing-400);
+}
+
+#card-group {
+  display: grid;
+  gap: var(--spacing-400);
+}
+
+@media (min-width: 767px) {
+  #card-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-400);
+  }
+}
+
+@media (min-width: 1023px) {
+  html {
+    height: 100dvh;
+  }
+
+  main {
+    display: flex;
+    gap: var(--spacing-400);
+  }
+
+  #card-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-400);
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
