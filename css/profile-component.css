@@ -77,10 +77,6 @@
     }
   }
 
-  .profile-pre-text {
-    text-transform: capitalize;
-  }
-
   .profile-name {
     font: var(--text-preset-2);
     text-transform: capitalize;
