@@ -1,0 +1,73 @@
+/* Reset */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* Default */
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Variables */
+
+:root {
+  /* color */
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(0, 0, 0);
+  --color-navy-950: rgb(14, 19, 35);
+  --color-navy-900: rgb(28, 32, 75);
+  --color-navy-800: rgb(51, 57, 122);
+  --color-navy-200: rgb(187, 192, 255);
+  --color-orange-300: rgb(255, 139, 100);
+  --color-purple-700: rgb(115, 53, 210);
+  --color-purple-600: rgb(81, 71, 234);
+  --color-purple-500: rgb(112, 120, 201);
+  --color-blue-300: rgb(85, 194, 230);
+  --color-pink-400: rgb(255, 94, 125);
+  --color-green-400: rgb(75, 207, 130);
+  --color-yellow-300: rgb(241, 199, 91);
+  --color-grey-200: rgb(216, 216, 216);
+
+  /* Typography */
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+
+  --text-preset-1: var(--font-weight-light) 3.5rem/1.1786 "Rubik";
+  --text-preset-2: var(--font-weight-light) 2.5rem/1.751 "Rubik";
+  --text-preset-3: var(--font-weight-light) 2rem/1.1875 "Rubik";
+  --text-preset-4: var(--font-weight-light) 1.5rem/1.1667 "Rubik";
+  --text-preset-5: var(--font-weight-medium) 1.125rem/1.1667 "Rubik";
+  --text-preset-6: var(--font-weight-regular) 1.125rem/1.1667 "Rubik";
+  --text-preset-7: var(--font-weight-regular) 0.9375rem/1.2 "Rubik";
+
+  /* Spacing */
+
+  --spacing-0: 0px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+}
+
+/* Font setting template */
+
+html {
+  font: var(--text-preset-6);
+  color: var(--color-white);
+}
