@@ -24,13 +24,16 @@ function displayActivityCards() {
       return response.json();
     })
     .then((data) => {
+      let html = "";
+
       for (let i = 0; i < 6; i++) {
         const object = data[i];
         const title = object.title.toLowerCase();
         const current = object.timeframes[value].current;
         const previous = object.timeframes[value].previous;
 
-        cardGroup.innerHTML += `<div class="card work card${i}">
+        html += `
+    <div class="card work card${i}">
       <div class="card-color">
         <img src="./images/icon-${title.replaceAll(" ", "-")}.svg" alt="" />
       </div>
@@ -46,7 +49,9 @@ function displayActivityCards() {
           <span class="card-previous-hours">Last Week - ${previous}hrs</span>
         </div>
       </div>
-    </div>`;
+    </div>
+  `;
       }
+      cardGroup.innerHTML = html;
     });
 }
