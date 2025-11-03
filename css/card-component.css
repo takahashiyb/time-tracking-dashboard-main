@@ -35,7 +35,7 @@
 .card-color {
   justify-self: end;
   position: relative;
-  height: 50px;
+  height: 35px;
   img {
     position: absolute;
     top: 0px;
@@ -48,7 +48,7 @@
 .card-content {
   background-color: var(--color-navy-900);
   border-radius: 16px 16px 0 0;
-  padding: var(--spacing-400);
+  padding: var(--spacing-300);
   display: grid;
   row-gap: var(--spacing-300);
   z-index: 2;
@@ -77,15 +77,35 @@
 
 .card-details {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   padding-right: var(--spacing-500);
   gap: var(--spacing-100);
 }
 
 .card-current-hours {
-  font: var(--text-preset-1);
+  font: var(--text-preset-3);
 }
 
 .card-previous-hours {
   font: var(--text-preset-6);
   color: var(--color-navy-200);
+}
+
+@media (min-width: 763px) {
+  .card-color {
+    height: 50px;
+  }
+
+  .card-content {
+    padding: var(--spacing-400);
+  }
+
+  .card-details {
+    grid-template-columns: 1fr;
+  }
+
+  .card-current-hours {
+    font: var(--text-preset-1);
+  }
 }

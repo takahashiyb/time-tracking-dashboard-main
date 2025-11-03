@@ -68,6 +68,6 @@ body {
 /* Font setting template */
 
 html {
-  font: var(--text-preset-6);
+  font: var(--text-preset-5);
   color: var(--color-white);
 }
