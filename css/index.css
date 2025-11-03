@@ -48,7 +48,7 @@ body {
   --font-weight-medium: 500;
 
   --text-preset-1: var(--font-weight-light) 3.5rem/1.1786 "Rubik";
-  --text-preset-2: var(--font-weight-light) 2.5rem/1.751 "Rubik";
+  --text-preset-2: var(--font-weight-light) 2.5rem/1.2 "Rubik";
   --text-preset-3: var(--font-weight-light) 2rem/1.1875 "Rubik";
   --text-preset-4: var(--font-weight-light) 1.5rem/1.1667 "Rubik";
   --text-preset-5: var(--font-weight-medium) 1.125rem/1.1667 "Rubik";
