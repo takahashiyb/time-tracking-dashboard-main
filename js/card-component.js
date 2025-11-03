@@ -26,7 +26,7 @@ function displayActivityCards() {
     .then((data) => {
       for (let i = 0; i < 6; i++) {
         const object = data[i];
-        const title = object.title;
+        const title = object.title.toLowerCase();
         const current = object.timeframes[value].current;
         const previous = object.timeframes[value].previous;
 

@@ -62,6 +62,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  .card-title {
+    text-transform: capitalize;
+  }
+
   > button {
     justify-self: end;
     background-color: transparent;
